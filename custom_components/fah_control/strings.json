@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Folding@Home Client",
+        "description": "Enter the connection details for your FAH v8 client.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "name": "Name"
+        },
+        "data_description": {
+          "host": "IP address or hostname of the FAH client",
+          "port": "WebSocket API port (default 7396)",
+          "name": "Friendly name for this FAH machine"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to the FAH client. Verify the host and port are correct and the client is running."
+    },
+    "abort": {
+      "already_configured": "This FAH client is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Folding@Home Control Options",
+        "data": {
+          "poll_interval": "Poll interval (seconds)"
+        },
+        "data_description": {
+          "poll_interval": "How often to check the FAH client status"
+        }
+      }
+    }
+  }
+}

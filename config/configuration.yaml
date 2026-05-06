@@ -1,0 +1,27 @@
+# Minimal Home Assistant configuration for local development.
+# Run with:  ./run.sh  (or:  .venv/bin/hass --config config/)
+
+homeassistant:
+  name: FAH Dev
+  unit_system: metric
+  time_zone: Europe/Helsinki
+
+# Core HTTP server — needed for the web UI
+http:
+
+# Recorder + history — the frontend expects these
+recorder:
+  purge_keep_days: 3
+history:
+
+# Minimal frontend so we can access the UI at http://localhost:8123
+frontend:
+
+# Config panel — lets us add integrations from the UI
+config:
+
+# Enable debug logging for our custom integration
+logger:
+  default: info
+  logs:
+    custom_components.fah_control: debug

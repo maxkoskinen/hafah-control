@@ -1,0 +1,53 @@
+fold:
+  name: "Start Folding"
+  description: "Start folding on the FAH client"
+  fields:
+    entity_id:
+      name: "Entity"
+      description: "The FAH entity to control"
+      required: true
+      selector:
+        entity:
+          integration: fah_control
+    group:
+      name: "Group"
+      description: "Optional resource group name to target"
+      required: false
+      selector:
+        text:
+
+pause:
+  name: "Pause Folding"
+  description: "Pause folding on the FAH client"
+  fields:
+    entity_id:
+      name: "Entity"
+      description: "The FAH entity to control"
+      required: true
+      selector:
+        entity:
+          integration: fah_control
+    group:
+      name: "Group"
+      description: "Optional resource group name to target"
+      required: false
+      selector:
+        text:
+
+finish:
+  name: "Finish Work Unit"
+  description: "Finish current work unit then pause"
+  fields:
+    entity_id:
+      name: "Entity"
+      description: "The FAH entity to control"
+      required: true
+      selector:
+        entity:
+          integration: fah_control
+    group:
+      name: "Group"
+      description: "Optional resource group name to target"
+      required: false
+      selector:
+        text:

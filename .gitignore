@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+.venv/
+
+# pytest
+.pytest_cache/
+
+.DS_Store
+
+config/*
+
+# Keep the config directory structure and our configuration
+!config/
+!config/configuration.yaml
